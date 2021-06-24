@@ -6,7 +6,7 @@ namespace DataStructures
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Data Structure Problem statements");
+            Console.WriteLine("Data Structure Problem Statements");
         }
     }
 }
