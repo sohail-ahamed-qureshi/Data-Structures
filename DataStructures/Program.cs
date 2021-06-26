@@ -13,6 +13,7 @@ namespace DataStructures
         {
             Console.WriteLine("Press 1 to perform operation on Unorderedlist");
             Console.WriteLine("Press 2 to perform operation on Orderedlist");
+            Console.WriteLine("Press 3 to perform  Stack operation on simple balanced Parantheses");
             int inn =Convert.ToInt32( Console.ReadLine());
             switch (inn)
             {
@@ -25,6 +26,11 @@ namespace DataStructures
                     //OrderedList
                     OrderedList orderedList = new OrderedList();
                     orderedList.Operation();
+                    break;
+                case 3:
+                    //Simple Balanced Parantheses Expr - (5+6)*(7+8)/(4+3)(5+6)*(7+8)/(4+3) using stack
+                    StackOperation stackOperation = new StackOperation();
+                    stackOperation.BalancedParantheses();
                     break;
                 default:
                     Console.WriteLine("Invalid input");

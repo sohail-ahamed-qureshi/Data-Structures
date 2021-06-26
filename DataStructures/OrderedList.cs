@@ -43,23 +43,23 @@ namespace DataStructures
             else
             {
                 LinkedListNode<int> temp = linkedlist.First;
-                if(linkedlist.Count == 0)
+                if (linkedlist.Count == 0)
                 {
                     linkedlist.AddFirst(search);
                 }
-                while(temp != null)
+                while (temp != null)
                 {
-                    if(temp.Value >= search)
+                    if (temp.Value >= search)
                     {
                         linkedlist.AddFirst(search);
                         break;
                     }
-                    if(search >= linkedlist.Last.Value)
+                    if (search >= linkedlist.Last.Value)
                     {
                         linkedlist.AddLast(search);
                         break;
                     }
-                    if(temp.Value <= search && temp.Next.Value >= search) 
+                    if (temp.Value <= search && temp.Next.Value >= search)
                     {
                         linkedlist.AddAfter(temp, search);
                         break;
@@ -67,7 +67,6 @@ namespace DataStructures
                     temp = temp.Next;
                 }
                 Console.WriteLine($"{search} not found. Added in the list.");
-                //linkedlist.AddLast(search);
             }
             Console.WriteLine();
             Display(linkedlist);
@@ -93,12 +92,12 @@ namespace DataStructures
             LinkedListNode<int> node = linkedList.First;
             LinkedListNode<int> firstval;
             int val;
-            while(node != null)
+            while (node != null)
             {
                 firstval = node.Next;
                 while (firstval != null)
                 {
-                    if(node.Value > firstval.Value)
+                    if (node.Value > firstval.Value)
                     {
                         val = firstval.Value;
                         firstval.Value = node.Value;
@@ -110,6 +109,5 @@ namespace DataStructures
             }
             return linkedList;
         }
-
     }
 }
