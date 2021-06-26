@@ -11,8 +11,25 @@ namespace DataStructures
         /// <param name="args"></param>
         static void Main(string[] args)
         {
-            UnorderedList unorderedList = new UnorderedList();
-            unorderedList.Operation();
+            Console.WriteLine("Press 1 to perform operation on Unorderedlist");
+            Console.WriteLine("Press 2 to perform operation on Orderedlist");
+            int inn =Convert.ToInt32( Console.ReadLine());
+            switch (inn)
+            {
+                case 1:
+                    //UnorderedList
+                    UnorderedList unorderedList = new UnorderedList();
+                    unorderedList.Operation();
+                    break;
+                case 2:
+                    //OrderedList
+                    break;
+                default:
+                    Console.WriteLine("Invalid input");
+                    break;
+            }
+
+            
         }
     }
 }

@@ -48,7 +48,6 @@ namespace DataStructures
                 Console.WriteLine($"{input} added to the list");
             }
             Display(linkedlist);
-
         }
 
         private void Display(LinkedList<string> linkedlist)
