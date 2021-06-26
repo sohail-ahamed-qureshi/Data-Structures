@@ -23,6 +23,8 @@ namespace DataStructures
                     break;
                 case 2:
                     //OrderedList
+                    OrderedList orderedList = new OrderedList();
+                    orderedList.Operation();
                     break;
                 default:
                     Console.WriteLine("Invalid input");
