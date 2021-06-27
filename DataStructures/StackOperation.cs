@@ -13,7 +13,7 @@ namespace DataStructures
         /// <returns></returns>
         public bool BalancedParantheses()
         {
-            string expr = "{(5+6)*(7+8)}/{(4+3)(5+6)}*{(7+8)/(4+3)}]";
+            string expr = "{(5+6)*(7+8)}/{(4+3)(5+6)}*{(7+8)/(4+3)";
             Stack<char> stack = new Stack<char>();
             for (int i = 0; i < expr.Length; i++)
             {

@@ -11,9 +11,10 @@ namespace DataStructures
         /// <param name="args"></param>
         static void Main(string[] args)
         {
-            Console.WriteLine("Press 1 to perform operation on Unorderedlist");
-            Console.WriteLine("Press 2 to perform operation on Orderedlist");
-            Console.WriteLine("Press 3 to perform  Stack operation on simple balanced Parantheses");
+            Console.WriteLine("Press 1 to perform operation on Unorderedlist.");
+            Console.WriteLine("Press 2 to perform operation on Orderedlist.");
+            Console.WriteLine("Press 3 to perform  Stack operation on simple balanced Parantheses.");
+            Console.WriteLine("Press 4 to perform  Simulate Banking Cash counter Operation.");
             int inn =Convert.ToInt32( Console.ReadLine());
             switch (inn)
             {
@@ -32,12 +33,15 @@ namespace DataStructures
                     StackOperation stackOperation = new StackOperation();
                     stackOperation.BalancedParantheses();
                     break;
+                case 4:
+                    //Simulate banking cash counter
+                    BankingSimulation banking = new BankingSimulation();
+                    banking.CashCounter();
+                    break;
                 default:
                     Console.WriteLine("Invalid input");
                     break;
-            }
-
-            
+            } 
         }
     }
 }
